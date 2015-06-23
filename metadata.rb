@@ -1,0 +1,7 @@
+name 'urbanterror'
+maintainer 'Jon Chen'
+maintainer_email 'bsd@voltaire.sh'
+license 'MIT'
+description 'Installs/Configures urbanterror'
+long_description 'Installs/Configures urbanterror'
+version '0.1.0'
