@@ -1,0 +1,10 @@
+description "urban terror server"
+author "Jon Chen"
+
+setuid <%= node['urbanterror']['user'] %>
+setgid <%= node['urbanterror']['group'] %>
+
+start on filesystem and net-device-up IFACE=eth0
+respawn
+
+exec <%= node['urbanterror']['dir'] %>/Quake3-UrT-Ded.x86_64

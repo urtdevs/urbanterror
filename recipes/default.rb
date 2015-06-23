@@ -39,3 +39,10 @@ execute "chown urt directory" do
   only_if { Etc.getpwuid(File.stat(node["urbanterror"]["dir"]).uid) != node["urbanterror"]["user"] }
   action :run
 end
+
+template "/etc/init/urbanterror.conf" do
+  source "urbanterror.conf.erb"
+  mode 00644
+  verify "/bin/init-checkconf %{path}"
+  action :create
+end
