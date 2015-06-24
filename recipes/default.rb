@@ -46,3 +46,11 @@ template "/etc/init/urbanterror.conf" do
   verify "/bin/init-checkconf %{path}"
   action :create
 end
+
+service "urbanterror" do
+  action :enable
+end
+
+service "urbanterror" do
+  action :start
+end
