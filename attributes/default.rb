@@ -14,3 +14,24 @@ default["urbanterror"]["archive"]["checksum"], _ = open("https://objects.dreamho
 default["urbanterror"]["dir"] = "/opt/urbanterror"
 default["urbanterror"]["user"] = "urbanterror"
 default["urbanterror"]["group"] = default["urbanterror"]["user"]
+
+default["urbanterror"]["cfg"] = {
+  "hostname" => "urtdevs",
+  "joinmessage" => "github.com/urtdevs",
+  "motd" => "github.com/urtdevs",
+  "auth" => 1,
+  "auth_notoriety" => 0,
+  "auth_tags" => 1,
+  "auth_cheaters" => 1,
+  "auth_verbosity" => 1,
+  "auth_log" => 1,
+  "auth_groups" => "",
+  "auth_owners" => "",
+  "log" => "games.log",
+  "logsync" => "1",
+  "loghits" => "0",
+  "logroll" => "1",
+  "logfile" => "0",
+  "rconpassword" => "supersecret",
+  "referee" => "",
+}
